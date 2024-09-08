@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Start of Async Drift Code -->
+
+  <!-- End of Async Drift Code -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+    <title>NoteRizz</title>
+   
+    <!-- Fonts and icons -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <!-- Nucleo Icons -->
+    <link href="/css/nucleo-icons.css" rel="stylesheet" />
+    <!-- CSS Files -->
+    <link href="/css/black-dashboard.css?v=1.0.0" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script>
+     "use strict";
+
+!function() {
+    var t = window.driftt = window.drift = window.driftt || [];
+    if (!t.init) {
+        if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+        t.invoked = !0, t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on"],
+            t.factory = function(e) {
+                return function() {
+                    var n = Array.prototype.slice.call(arguments);
+                    return n.unshift(e), t.push(n), t;
+                };
+            }, t.methods.forEach(function(e) {
+                t[e] = t.factory(e);
+            }), t.load = function(t) {
+                var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+                o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+                var i = document.getElementsByTagName("script")[0];
+                i.parentNode.insertBefore(o, i);
+            };
+    }
+}();
+drift.SNIPPET_VERSION = '0.3.1';
+drift.load('z3ac68u7ms9g');
+      </script>
+  
+  
+  </head>
+
+<style>
+    .card .card-body{
+        background-color: #27293d;
+        
+    }
+    .card{
+        border: none;
+
+    }
+    .row{
+        margin-top: 30px;
+    }
+    .btn{width:55px;
+    }
+    .container-fluid
+    {
+      display: flex;
+
+    }
+    .navbar
+    {
+      display:flex;
+
+    }
+    .card-img-top {
+        width: 100%;
+        height: 200px; 
+        object-fit: cover;
+    }
+</style>
+
+
+<body class="">
+  <div class="wrapper">
+    <div class="sidebar">
+      <!--
+        Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red"
+    -->
+      <div class="sidebar-wrapper">
+        <div class="logo">
+          <a href="javascript:void(0)" class="simple-text logo-mini">
+            
+          </a>
+          <a href="javascript:void(0)" class="simple-text logo-normal">
+            NoteRizz
+          </a>
+        </div>
+        <ul class="nav">
+          <li >
+            <a href="/studentPerf">
+              <i class="tim-icons icon-chart-pie-36"></i>
+              <p>Dashboard</p>
+            </a>
+          </li>
+          <li class = "active">
+            <a href="/notesDown">
+              <i class="tim-icons icon-puzzle-10"></i>
+              <p>Notes</p>
+            </a>
+            </li>
+            <li > 
+              <a href="/notesUpload">
+                <i class="tim-icons icon-align-center"></i>
+                <p>Upload</p>
+              </a>
+            </li>
+     
+          <li> 
+            <a href="/typography">
+              <i class="tim-icons icon-align-center"></i>
+              <p>User Profile</p>
+            </a>
+          </li>
+          <li>
+            <a href="/user">
+              <i class="tim-icons icon-single-02"></i>
+              <p>Edit Profile</p>
+            </a>
+          </li>
+          <li>
+            <li>
+              <a href="/test">
+                <i class="tim-icons icon-bell-55"></i>
+                <p>Test</p>
+              </a>
+            </li>
+            <li>
+            <a href="/notifications">
+              <i class="tim-icons icon-bell-55"></i>
+              <p>Notifications</p>
+            </a>
+          </li>
+          <li>
+            <a href="/teachernotes">
+              <i class="tim-icons icon-bell-55"></i>
+              <p>Faculty Notes</p>
+            </a>
+          </li>
+          
+          
+        </ul>
+      </div>
+    </div>
+
+
+    
+    <div class="main-panel">
+      <nav class="navbar navbar-expand-lg navbar-absolute navbar-transparent">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <div class="navbar-toggle d-inline">
+              <button type="button" class="navbar-toggler">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+              </button>
+            </div>
+            <a class="navbar-brand" href="javascript:void(0)">Dashboard</a>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navigation">
+            <ul class="navbar-nav ml-auto">
+              
+              <li class="dropdown nav-item">
+                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                  <div class="photo">
+                    <img src="../assets/img/anime3.png" alt="Profile Photo">
+                  </div>
+                  <!-- <b class="caret d-none d-lg-block d-xl-block"></b> -->
+                  <p class="d-lg-none">
+                    Log out
+                  </p>
+                </a>
+                <ul class="dropdown-menu dropdown-navbar">
+                  
+                  <li class="nav-link"><a href="/logout"  class="nav-item dropdown-item">Log out</a></li>
+                </ul>
+              </li>
+              <li class="separator d-lg-none"></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="modal modal-search fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="SEARCH">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <i class="tim-icons icon-simple-remove"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Navbar -->
+      <!-- End Navbar -->
+      <div class="content">
+        <!-- <div class="navbar-collapse collapse" id="navbarsExample04" style=""> -->
+            <!--<nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Fourth navbar example">-->
+                <div class="container-fluid">
+                  <form action="/search" method="GET">
+                    <input type="text" name="query" placeholder="Enter the subject">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+           <!-- </nav>-->
+
+          <!-- </div> -->
+     
+           
+        <!-- notesDown.ejs -->
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <% if (found) {
+              for (let f of found) { %>   
+                  <div class="col">
+                      <div class="card h-100">
+                          <img src="/assets/img/<%= f.course %>.jpg" class="card-img-top" alt="Placeholder Image">
+                          <div class="card-body">
+                              <h5 class="card-title">
+                                  <a href="<%= f.file_url %>" download="<%= f.title %>"><%= f.course %></a>
+                              </h5>
+                              <p class="card-text"><%= f.description %></p>
+                          </div>
+                          <div class="card-footer d-flex justify-content-between align-items-center">
+                              <div class="btn-group">
+                                  <button type="button" class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#myModal_<%= f._id %>">View</button>
+                                  <form action="/like" method="POST">
+                                    <input type="hidden" name="file_url" value="<%=f.file_url%>">
+                                  <button type="submit" class="btn btn-sm btn-outline-success"><img src="like.png" alt="Like"></button>
+                                  <span class="likes-count"><%= f.likes %></span>
+                                  </form>
+                                <form action="/dislike" method="POST">
+                                    <input type="hidden" name="file_url" value="<%=f.file_url%>">
+                                 
+                                    <button type="submit" class="btn btn-sm btn-outline-danger"><img src="thumb-down.png" alt="Dislike"></button>
+                                    <span class="likes-count"><%= f.dislikes %></span>
+                                    </div>
+                            </form>
+                              <form action="/download" method="POST">
+                                  <input type="hidden" name="file_url" value="<%=f.file_url%>">
+                                  <input type="hidden" name="fileName" value="<%=f.title%>">
+                                  <button type="submit" class="btn btn-sm btn-primary">Bookmark</button>
+                              </form>
+                              <small class="text-muted"></small>
+                          </div>
+                      </div>
+                  </div>
+      
+                  <!-- modal -->
+                  <div class="modal fade" id="myModal_<%= f._id %>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xl" role="document">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <h5 class="modal-title" id="myModalLabel">Preview</h5>
+                                  <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                  <div class="embed-responsive embed-responsive-16by9">
+                                      <iframe class="embed-responsive-item" src="<%=f.file_url%>" frameborder="0"></iframe>
+                                  </div>
+                              </div>
+                              <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <a href="<%=f.file_url%>" download class="btn btn-primary">Download</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+          <% }
+          }%>
+      </div>
+       
+  <!--   Core JS Files   -->
+  <script src="/assets/js/core/jquery.min.js"></script>
+  <script src="/assets/js/core/popper.min.js"></script>
+  <script src="/assets/js/core/bootstrap.min.js"></script>
+  <script src="/assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <!-- Google Maps Plugin -->
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+  <!-- Chart JS -->
+  <script src="/assets/js/plugins/chartjs.min.js"></script>
+  <!-- Notifications Plugin -->
+  <script src="/assets/js/plugins/bootstrap-notify.js"></script>
+  <!-- Control Center for Black Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="/assets/js/black-dashboard.min.js?v=1.0.0"></script>
+  <!-- Black Dashboard DEMO methods, don't include it in your project! -->
+  <script src="/assets/demo/demo.js"></script>
+  <script>
+    $(document).ready(function() {
+      $().ready(function() {
+        $sidebar = $('.sidebar');
+        $navbar = $('.navbar');
+        $main_panel = $('.main-panel');
+
+        $full_page = $('.full-page');
+
+        $sidebar_responsive = $('body > .navbar-collapse');
+        sidebar_mini_active = true;
+        white_color = false;
+
+        window_width = $(window).width();
+
+        fixed_plugin_open = $('.sidebar .sidebar-wrapper .nav li.active a p').html();
+
+
+
+        $('.fixed-plugin a').click(function(event) {
+          if ($(this).hasClass('switch-trigger')) {
+            if (event.stopPropagation) {
+              event.stopPropagation();
+            } else if (window.event) {
+              window.event.cancelBubble = true;
+            }
+          }
+        });
+
+        $('.fixed-plugin .background-color span').click(function() {
+          $(this).siblings().removeClass('active');
+          $(this).addClass('active');
+
+          var new_color = $(this).data('color');
+
+          if ($sidebar.length != 0) {
+            $sidebar.attr('data', new_color);
+          }
+
+          if ($main_panel.length != 0) {
+            $main_panel.attr('data', new_color);
+          }
+
+          if ($full_page.length != 0) {
+            $full_page.attr('filter-color', new_color);
+          }
+
+          if ($sidebar_responsive.length != 0) {
+            $sidebar_responsive.attr('data', new_color);
+          }
+        });
+
+        $('.switch-sidebar-mini input').on("switchChange.bootstrapSwitch", function() {
+          var $btn = $(this);
+
+          if (sidebar_mini_active == true) {
+            $('body').removeClass('sidebar-mini');
+            sidebar_mini_active = false;
+            blackDashboard.showSidebarMessage('Sidebar mini deactivated...');
+          } else {
+            $('body').addClass('sidebar-mini');
+            sidebar_mini_active = true;
+            blackDashboard.showSidebarMessage('Sidebar mini activated...');
+          }
+
+          // we simulate the window Resize so the charts will get updated in realtime.
+          var simulateWindowResize = setInterval(function() {
+            window.dispatchEvent(new Event('resize'));
+          }, 180);
+
+          // we stop the simulation of Window Resize after the animations are completed
+          setTimeout(function() {
+            clearInterval(simulateWindowResize);
+          }, 1000);
+        });
+
+        $('.switch-change-color input').on("switchChange.bootstrapSwitch", function() {
+          var $btn = $(this);
+
+          if (white_color == true) {
+
+            $('body').addClass('change-background');
+            setTimeout(function() {
+              $('body').removeClass('change-background');
+              $('body').removeClass('white-content');
+            }, 900);
+            white_color = false;
+          } else {
+
+            $('body').addClass('change-background');
+            setTimeout(function() {
+              $('body').removeClass('change-background');
+              $('body').addClass('white-content');
+            }, 900);
+
+            white_color = true;
+          }
+
+
+        });
+
+        $('.light-badge').click(function() {
+          $('body').addClass('white-content');
+        });
+
+        $('.dark-badge').click(function() {
+          $('body').removeClass('white-content');
+        });
+      });
+    });
+    
+  </script>
+  <script>
+    // JavaScript function to send AJAX request to save the link
+    function saveLink(fileUrl) {
+        fetch('/save-link', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ fileUrl })
+        }).then(response => {
+            if (response.ok) {
+                console.log('Link saved successfully.');
+            } else {
+                console.error('Failed to save link.');
+            }
+        }).catch(error => {
+            console.error('Error:', error);
+        });
+    }
+</script>
+  <script>
+    $(document).ready(function() {
+      // Javascript method's body can be found in assets/js/demos.js
+      demo.initDashboardPageCharts();
+
+    });
+  </script> 
+  <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+  <script>
+    window.TrackJS &&
+      TrackJS.install({
+        token: "ee6fab19c5a04ac1a32a645abde4613a",
+        application: "black-dashboard-free"
+      });
+  </script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+</html>

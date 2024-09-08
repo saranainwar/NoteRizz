@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <title>
+    NoteRizz
+  </title>
+  <!-- Fonts and icons -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <!-- Nucleo Icons -->
+  <link href="/css/nucleo-icons.css" rel="stylesheet" />
+  <!-- CSS Files -->
+  <link href="/css/black-dashboard.css?v=1.0.0" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="/assets/demo/demo.css" rel="stylesheet" />
+  <style>
+    /* Add your custom styles here */
+    .question {
+      margin-bottom: 20px;
+    }
+
+    .options label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: normal;
+    }
+
+    .options input[type="radio"] {
+      margin-right: 10px;
+    }
+
+    .btn {
+      display: block;
+      margin: 0 auto;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: none;
+    }
+
+    .answer {
+      margin-top: 20px;
+      display: none;
+    }
+
+    .correct {
+      color: green;
+      font-weight: bold;
+    }
+
+    .incorrect {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body class="">
+  <div class="wrapper">
+    <div class="sidebar">
+      <!-- Sidebar content here -->
+      <div class="sidebar-wrapper">
+        <div class="logo">
+         
+          <a href="/" class="simple-text logo-normal">
+            NoteRizz
+          </a>
+        </div>
+        <ul class="nav">
+          <li >
+            <a href="/studentPerf">
+              <i class="tim-icons icon-chart-pie-36"></i>
+              <p>Dashboard</p>
+            </a>
+          </li>
+          <li >
+            <a href="/notesDown">
+              <i class="tim-icons icon-puzzle-10"></i>
+              <p>Notes</p>
+            </a>
+            </li>
+            <li> 
+              <a href="/notesUpload">
+                <i class="tim-icons icon-align-center"></i>
+                <p>Upload</p>
+              </a>
+            </li>
+     
+          <li> 
+            <a href="/typography">
+              <i class="tim-icons icon-align-center"></i>
+              <p>User Profile</p>
+            </a>
+          </li>
+          <li>
+            <a href="/user">
+              <i class="tim-icons icon-single-02"></i>
+              <p>Edit Profile</p>
+            </a>
+          </li>
+          <li>
+            <li  class = "active">
+              <a href="/test">
+                <i class="tim-icons icon-bell-55"></i>
+                <p>Test</p>
+              </a>
+            </li>
+            <li>
+            <a href="/notifications">
+              <i class="tim-icons icon-bell-55"></i>
+              <p>Notifications</p>
+            </a>
+          </li>
+          <li>
+            <a href="/teachernotes">
+              <i class="tim-icons icon-bell-55"></i>
+              <p>Faculty Notes</p>
+            </a>
+          </li>
+          
+          
+        </ul>
+      </div>
+    </div>
+
+    <div class="main-panel">
+      <!-- Navbar and other content here -->
+      <nav class="navbar navbar-expand-lg navbar-absolute navbar-transparent">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <div class="navbar-toggle d-inline">
+              <button type="button" class="navbar-toggler">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+              </button>
+            </div>
+            <a class="navbar-brand" href="javascript:void(0)">Test</a>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navigation">
+            <ul class="navbar-nav ml-auto">
+              
+              
+              <li class="dropdown nav-item">
+                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                  <div class="photo">
+                    <img src="../assets/img/anime3.png" alt="Profile Photo">
+                  </div>
+                  <b class="caret d-none d-lg-block d-xl-block"></b>
+                  <p class="d-lg-none">
+                    Log out
+                  </p>
+                </a>
+                <ul class="dropdown-menu dropdown-navbar">
+                  
+                  <li class="nav-link"><a href="/logout" class="nav-item dropdown-item">Log out</a></li>
+                </ul>
+              </li>
+              <li class="separator d-lg-none"></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="modal modal-search fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="SEARCH">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <i class="tim-icons icon-simple-remove"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <div class="content">
+    <div class="content_block" style="padding-left: 5%; padding-right: 5%; ">
+
+      
+  <form id="testForm" action="/test" method="POST">
+    <div class="content">
+      <div class="content_block" style="padding-left: 5%; padding-right: 5%;">
+        <h2><p>Ready to begin? Let the testing commence!</p></h2>
+        <% let q = 1;
+        for (let d of data) {
+            if (d.type === 'multiple') { %>
+                <div class="row">
+                    <div class="card card-chart">
+                        <div class="card-body">
+                            <div id="question<%= q %>" class="question">
+                                <p><%= d.question %></p>
+                                <% function shuffleArray(array) {
+                                        for (let i = array.length - 1; i > 0; i--) {
+                                            const j = Math.floor(Math.random() * (i + 1));
+                                            [array[i], array[j]] = [array[j], array[i]];
+                                        }
+                                        return array;
+                                    }
+                                    let options = [];
+                                    options.push(d.correct_answer);
+                                    options = options.concat(d.incorrect_answers);
+                                    options = shuffleArray(options);
+                                    for (let i = 0; i < options.length; i++) { %>
+                                    <div class="options">
+                                        <label>
+                                            <input type="radio" name="answer<%= q %>" value="<%= options[i] %>"> <%= options[i] %>
+                                        </label>
+                                    </div>
+                                <% } %>
+                                <!-- Hidden field for question -->
+                                <input type="hidden" name="question<%= q %>" value="<%= d.question %>">
+                                <!-- Hidden field for correct answer -->
+                                <input type="hidden" name="correctAnswer<%= q %>" value="<%= d.correct_answer %>">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        <% q++; } } %>
+        <button type="submit" class="btn btn-primary">Submit Test</button>
+      </div>
+    </div>
+  </form>
+
+    </div>
+  </div>
+
+  <!-- JavaScript and jQuery imports -->
+  <script src="../assets/js/core/jquery.min.js"></script>
+  <script src="../assets/js/core/popper.min.js"></script>
+  <script src="../assets/js/core/bootstrap.min.js"></script>
+  <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <script src="../assets/js/plugins/chartjs.min.js"></script>
+  <script src="../assets/js/plugins/bootstrap-notify.js"></script>
+  <script src="../assets/js/black-dashboard.min.js?v=1.0.0"></script>
+  <script src="../assets/demo/demo.js"></script>
+</body>
+
+</html>

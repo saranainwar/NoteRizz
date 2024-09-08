@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NoteRizz</title>
+<style>
+  
+  body {
+    font-family: proxima-nova, sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #1e1e2f;;
+    line-height: 24px;
+  }
+
+  .header {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .navbar {
+    font-family: proxima-nova, sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    background-color: #181633;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+
+  }
+
+  .navbar img {
+    height: 30px;
+    width: auto;
+  }
+
+  .signup-button {
+    background-color: #272343;
+    color: #ffffff;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    padding: 7px 33px;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  .signup-button:hover{
+    background-color: #ffffff;
+    color: #272343;
+  }
+
+  .heading-title {
+    font-family: proxima-nova, sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    color: #dce1f3;
+    text-align: left;
+    margin-top: 40px;
+    margin-left: 130px;
+    width: 60%;
+    margin-right: auto;
+    
+  }
+  
+
+  h1 {
+    text-align: left; /* Set text alignment to left */
+    font-size: 40px; /* Optionally adjust font size */
+    line-height: 1.4; /* Optionally adjust line height */
+  }
+
+  .container {
+    display: flex;
+    /* justify-content: center; */
+    margin-left: 130px;
+    align-items: center;
+  }
+
+  .box {
+    font-family: proxima-nova, sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    color: #eeeeee;
+    width: 350px;
+    padding: 50px;
+    padding-top: 30px;
+    border-radius: 5px;
+    background-color: #27293d;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin: 20px;
+  }
+
+  .box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .box h2 {
+    color: #fff;
+    margin-top: -7px;
+    text-align: left;
+  }
+
+  .box p {
+    font-family: proxima-nova, sans-serif;
+    line-height: 24px;
+    cursor: pointer;
+    margin-top: 1px;
+    color: #f3f3f3;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 18px;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 10px 48px;
+    margin-top: 11px;
+    background-color: #3336c9;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+               }
+
+               .btn1{
+                display: inline-block;
+    padding: 10px 48px;
+    margin-top: 11px;
+    background-color: #293f88;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+               }
+
+               .btn:hover{
+                background-color: #fff; /* Changed to white background */
+                color: #293f88;
+                border: none;
+               }
+
+             
+               .btn1:hover {
+                background-color: #fff; /* Changed to white background */
+                color: #293f88; /* Changed to navy blue text */
+                
+                }
+
+          .midBody{
+            margin-bottom: 150px;
+          }       
+.footer{
+  background: #2c2a3963;
+    padding: 30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align: center;
+}
+
+.footer .row{
+width:100%;
+margin:1% 0%;
+padding:0.6% 0%;
+color:gray;
+font-size:0.8em;
+}
+
+.footer .row a{
+text-decoration:none;
+color:gray;
+transition:0.5s;
+}
+
+.footer .row a:hover{
+color:#fff;
+}
+
+.footer .row ul{
+width:100%;
+}
+
+.footer .row ul li{
+display:inline-block;
+margin:0px 30px;
+}
+
+.footer .row a i{
+font-size:2em;
+margin:0% 1%;
+}
+.c{
+ 
+}
+@media (max-width:720px){
+.footer{
+text-align:left;
+padding:5%;
+}
+.footer .row ul li{
+display:block;
+margin:10px 0px;
+text-align:left;
+}
+.footer .row a i{
+margin:0% 3%;
+}
+}
+.c{
+  display: flex;
+}
+
+
+</style>
+
+<!-- Start of Async Drift Code -->
+<!-- Start of Async Drift Code -->
+<script>
+  "use strict";
+  
+  !function() {
+    var t = window.driftt = window.drift = window.driftt || [];
+    if (!t.init) {
+      if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+      t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+      t.factory = function(e) {
+        return function() {
+          var n = Array.prototype.slice.call(arguments);
+          return n.unshift(e), t.push(n), t;
+        };
+      }, t.methods.forEach(function(e) {
+        t[e] = t.factory(e);
+      }), t.load = function(t) {
+        var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+        var i = document.getElementsByTagName("script")[0];
+        i.parentNode.insertBefore(o, i);
+      };
+    }
+  }();
+  drift.SNIPPET_VERSION = '0.3.1';
+  drift.load('gy4ebanemud3');
+  </script>
+  <!-- End of Async Drift Code -->
+  <!-- End of Async Drift Code -->
+</head>
+<body>
+
+    <div class="navbar">
+        <img src="letter-n.png" alt="Logo">
+        <div class="c">
+        <form action="/register" method="GET">
+        <button class="signup-button">Student Sign Up</button>
+      </form>
+      <form action="/teacher" method="GET">
+        <button class="signup-button">Teacher Sign Up</button>
+      </form>
+    </div>
+      </div>
+      <div class="midBody">
+
+<div class="heading-title">
+    <h1 >The ultimate destination for seamless collaboration and empowerment in education </h1>
+
+</div>
+
+
+<div class="container">
+  <div class="box">
+    <h2>For Students</h2>
+    <p>Students login to get access to distributed notes, progress, and more.</p>
+   <a href="/studentlogin"> <button class="btn" >Login</button></a>
+  </div>
+  <div class="box">
+    <h2>For Faculty</h2>
+    <p>Teachers log in to monitor students' progress and achievements.</p>
+    <a href="/facultylogin"><button class="btn1" >Login</button></a>
+  </div>
+</div>
+</div>
+
+ 
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--GOOGLE FONTS-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+</head>
+<body>
+<footer>
+<div class="footer">
+<div class="row">
+<a href="#"><i class="fa fa-facebook"></i></a>
+<a href="#"><i class="fa fa-instagram"></i></a>
+<a href="#"><i class="fa fa-youtube"></i></a>
+<a href="#"><i class="fa fa-twitter"></i></a>
+</div>
+
+<div class="row">
+<ul>
+<li><a href="#">Contact us</a></li>
+<li><a href="#">Our Services</a></li>
+<li><a href="#">Privacy Policy</a></li>
+<li><a href="#">Terms & Conditions</a></li>
+<li><a href="#">Career</a></li>
+</ul>
+</div>
+
+<div class="row">
+ Copyright © 2024 NoteRizz - All rights reserved 
+</div>
+</div>
+</footer>
+
+</body>
+</html>
